@@ -44,16 +44,19 @@ An expression performs more of an evaluative function, whereas a statement assum
 ###What three functions can be used to get the integer, floating-point number, or string version of a value?
 int(), float(), str()
 ###Why does this expression cause an error? How can you fix it?
-'I have eaten ' + 99 + ' burritos.'
+
+####'I have eaten ' + 99 + ' burritos.'
+
 The expression causes an error because the integer 99 cannot be concatenated to the strings ‘I have eaten’ and ‘burritos.’ In order to fix it, convert the integer to a string using the str() function. 
-‘I have eaten ’ + str(99) + ‘ burritos.’
+
+`'I have eaten ' + str(99) + ' burritos.'
 
 ###Extra credit: 
 Search online for the Python documentation for thelen() function. It will be on a web page titled “Built-in Functions.” Skim the list of other functions Python has, look up what the round() function does, and experiment with it in the interactive shell.
 
  https://docs.python.org/3/library/functions.html
 
-`print('Enter the radius to find the area of the circle:')`
+`print('Enter a radius to find the area of a circle:')`
 
 `r = input()`
 
