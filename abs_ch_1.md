@@ -33,7 +33,7 @@ An expression performs more of an evaluative function, whereas a statement assum
 ###What should the following two expressions evaluate to?
 'spam' + 'spamspam'
 
-‘spam spamspam’
+‘spamspamspam’
 
 'spam' * 3
 
