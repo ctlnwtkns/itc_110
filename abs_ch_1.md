@@ -62,9 +62,9 @@ Search online for the Python documentation for thelen() function. It will be on 
 
 `import math`
 
-`circle = math.pi*int(r)**2`
+`area = math.pi*int(r)**2`
 
-`print(round(circle, 1))`
+`print(round(area, 2))`
 
 
 
