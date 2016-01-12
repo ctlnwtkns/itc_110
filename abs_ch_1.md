@@ -56,7 +56,7 @@ Search online for the Python documentation for thelen() function. It will be on 
 
  https://docs.python.org/3/library/functions.html
 
-`print('Enter a radius to find the area of a circle:')`
+`print('Enter a radius (in inches) to find the area of a circle:')`
 
 `r = input()`
 
@@ -64,7 +64,7 @@ Search online for the Python documentation for thelen() function. It will be on 
 
 `area = math.pi*int(r)**2`
 
-`print(round(area, 2))`
+`print(str(round(area, 1)) + ' inches squared')`
 
 
 
