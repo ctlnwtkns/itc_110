@@ -60,7 +60,9 @@ Search online for the Python documentation for thelen() function. It will be on 
 
 `r = input()`
 
-`circle = 3.14*int(r)**2`
+`import math`
+
+`circle = math.pi*int(r)**2`
 
 `print(round(circle, 1))`
 
