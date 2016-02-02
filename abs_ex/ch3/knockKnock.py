@@ -4,11 +4,11 @@
 #to who?
 #to whom.
 
-#import re
+import re
 def joke():
     print('knock knock')
     response = input()
-    if response == 'whos there?':  #find regular expression to capture all instances of who's there
+    if response == re.match([Ww] there(?=?), 'Who\'s there?', re.I):  #find regular expression to capture all instances of who's there
         print('To.')
         response2 = input()
         if response2 == 'To who?':
