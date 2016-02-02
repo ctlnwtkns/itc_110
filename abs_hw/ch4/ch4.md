@@ -23,11 +23,16 @@ A TypeError.
 ####What are two ways to remove values from a list?
 One way is to use the `del` statement; another is to use the `remove()` method.
 ####Name a few ways that list values are similar to string values.
-You can use the `len()` function, the `+` and `*` operators, and the augmented assignment operators with both.
+You can use the `len()` function; the `+` and `*`, `in` and `not in`, and augmented assignment operators; `for` loops; and indexing and slicing with both list values and string values. Also, both lists and strings are ordered sequences of values. 
 ####What is the difference between lists and tuples?
+A list is a mutable data type; a tuple is an immutable form of a list data type. A list is invoked with square brackets`[ ]`; a tuple, with parenthese `( )`. 
 ####How do you type the tuple value that has just the integer value 42 in it?
+`type((42,))`
 ####How can you get the tuple form of a list value? How can you get the list form of a tuple value?
+`tuple()` and `list()`, respectively
 ####Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
+These variables contain a list *reference*, or a value that points to the list. 
 ####What is the difference between copy.copy() and copy.deepcopy()?
+`copy.copy()` makes a duplicate copy of the list; `copy.deepcopy()` will also make copies of the lists of the list.
 
 
