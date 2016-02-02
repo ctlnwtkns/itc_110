@@ -1,9 +1,10 @@
 ####What is [ ]?
-The empty brackets represent a list value.
+The empty brackets represent a list value (specifically, an empty list value).
 ####How would you assign the value `hello` as the third value in a list stored in a variable named `spam`? (Assume `spam` contains [2,4,6,8,10]).
 `spam[3] = 'hello'`
 ####*For the following three questions, let’s say `spam` contains the list `['a','b', 'c', 'd']`.*
 ####What does `spam[int('3'*2)/11]` evaluate to?
+A TypeError.
 ####What does `spam[-1]` evaluate to?
 `'d'`
 ####What does `spam[:2]` evaluate to?
@@ -22,6 +23,7 @@ The empty brackets represent a list value.
 ####What are two ways to remove values from a list?
 One way is to use the `del` statement; another is to use the `remove()` method.
 ####Name a few ways that list values are similar to string values.
+You can use the `len()` function, the `+` and `*` operators, and the augmented assignment operators with both.
 ####What is the difference between lists and tuples?
 ####How do you type the tuple value that has just the integer value 42 in it?
 ####How can you get the tuple form of a list value? How can you get the list form of a tuple value?
