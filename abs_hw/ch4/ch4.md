@@ -22,5 +22,10 @@ The empty brackets represent a list value.
 ####What are two ways to remove values from a list?
 One way is to use the `del` statement; another is to use the `remove()` method.
 ####Name a few ways that list values are similar to string values.
+####What is the difference between lists and tuples?
+####How do you type the tuple value that has just the integer value 42 in it?
+####How can you get the tuple form of a list value? How can you get the list form of a tuple value?
+####Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
+####What is the difference between copy.copy() and copy.deepcopy()?
 
 
