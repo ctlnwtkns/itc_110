@@ -12,7 +12,7 @@ to the function will be removed from the string.
 
 import re
 
-def v(str, sub = None):
+def v(str, sub = None):	
 	if sub != None:
 		regex = re.compile(sub)
 		mo = regex.search(str)
@@ -23,4 +23,6 @@ def v(str, sub = None):
 		mo = regexString.search(str)
 		print(mo.group())
 
-v('		hello world		', )
+v('			hello world', 'orld')
+
+
