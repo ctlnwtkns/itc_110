@@ -6,62 +6,31 @@ import re, os
 
 def search(name):
 #list all files in current working directory 
-	os.chdir('/Users/caitlin/Documents/school/itc_110/abs_ex/ch8/project1')
+	projectDir = '/Users/caitlin/Documents/school/itc_110/abs_ex/ch8/project1'
+	os.chdir(projectDir)
 	contents = os.listdir(os.getcwd())
-	txtRegex = re.compile(r'.*.txt$')
-
-#open all .txt files
-	for i in contents[:]:
-		mo = txtRegex.search(i)
-		if mo != None:
-			search = os.path.join(contents, i)
-			openFile = open(search)
-			readFile = openFile.read()
+	for i in contents[:]: #iterate through the indices of contents
+		txtRegex = re.compile(r'.*.txt$')
+		mo = txtRegex.search(i) #at each index, search for a match object 
+		if mo != None: #if mo found	
 			
-			#regex to search for (anything)
-			readRegex = re.compile(r'^Name:(/s)?.*')
+			#open all .txt files
+			openFile = open(i) #open file
+			readFile = openFile.read() #read file
+		
+			#regex to search for (any quiz where name is not blank)
+			readRegex = re.compile(r'Name:(\s)?[A-Z]([a-z])*\s[A-Z]([a-z])*', re.I)
 
 			#search input for match object and store in mo variable
 			mo = readRegex.search(readFile)
 
-			#evaluate match object and print results
+			#evaluate match object and print results (list of file names containing mo)
 			if mo != None:
-				print('Hello ' + name)
-			else:
-				print('Name not found.')
-'''
-			readRegex = re.compile(r'^Name:(/s)?[a-z].*/s[a-z].*/n', re.I)
-			mo = readRegex.search(readFile)
-			if mo == name:
-				print(os.path.basename(search))
-'''		
+				#print(readFile)
+				print(i)
 
 #receive user-supplied phrase			
 print('Please type your first and last name:')
 name = raw_input()
 search(name)
 
-
-		
-'''		
-r'[a-z](/w)*/s[a-z](/w)*', re.I	
-		for n in search[:]:
-			
-			readRegex = re.compile(r'^Name:[A-Z].*/s[A-Z].*/n/n')
-			mo = readRegex.search(readFile)
-			if mo != None:
-				print(read(readFile))
-			
-'''		
-
-'''
-#regex to open files with student name
-(r'^Name:(/s)?[a-z].*/s[a-z].*/n/n', re.I)
-
-#regex to search for files that begin with 'Name:'
-(r'^Name:')
-
-
-
-
-'''
