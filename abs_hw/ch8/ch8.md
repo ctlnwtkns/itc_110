@@ -25,3 +25,4 @@ Write mode overwrites the existing data in the file.
 `read()` returns the contents of the file as a single string value, while `readlines()` returns the contents of the file as a list of string values, storing each line of text in a new string. 
 
 ###What data structure does a shelf value resemble?
+The shelf value resembles the dictionary data structure. 
