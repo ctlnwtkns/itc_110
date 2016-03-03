@@ -5,20 +5,21 @@
 import re, os
 
 def search(name):
-#list all files in current working directory
-	pwd = os.getcwd()
-	contents = os.listdir(pwd)
+#list all files in current working directory 
+	os.chdir('/Users/caitlin/Documents/school/itc_110/abs_ex/ch8/project1')
+	contents = os.listdir(os.getcwd())
 	txtRegex = re.compile(r'.*.txt$')
+
 #open all .txt files
 	for i in contents[:]:
 		mo = txtRegex.search(i)
 		if mo != None:
-			search = os.path.join(pwd, i)
+			search = os.path.join(contents, i)
 			openFile = open(search)
 			readFile = openFile.read()
 			
 			#regex to search for (anything)
-			readRegex = re.compile(r'.*')
+			readRegex = re.compile(r'^Name:(/s)?.*')
 
 			#search input for match object and store in mo variable
 			mo = readRegex.search(readFile)
@@ -38,6 +39,7 @@ def search(name):
 #receive user-supplied phrase			
 print('Please type your first and last name:')
 name = raw_input()
+search(name)
 
 
 		
