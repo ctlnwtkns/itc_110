@@ -7,3 +7,4 @@ for filename in os.listdir('/home/caitlin/web/waiteSmith/majorArcana2'):
 	mo = nameRegex.search(filename)
 	shutil.copy(filename, nameRegex.sub('', filename))
 	
+	
