@@ -42,6 +42,18 @@ figure {
 figcaption{
 }
 
+p.link1{
+        width:640px;
+        margin:0 auto;
+        align: center;
+}
+
+p.link2{
+        width:640px;
+        margin:0 auto;
+        align: center;
+}
+
 footer{
     text-align: center;
     background-color: #f96e5b;
