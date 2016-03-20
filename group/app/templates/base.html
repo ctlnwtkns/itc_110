@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css' />
+         {% if title %}
+        <title>
+            {{ title }} - Goepotatodementer's Final Project
+        </title>
+        {% else %}
+        <title>
+            Welcome to Our Final Project
+        </title>
+        {% endif %}
+        
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="../static/styles.css" />
+        <link rel="python" href="../views.py"/>
+    </head>
+<body>
+    
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }} </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+        
+    {% block content %}{% endblock %}
+        
+    <aside>
+        <table>
+            <caption><h3>Your Stats and Special Items</h3></caption>
+            <tr>
+                <td><img src="../static/images/heart.jpg" alt="heart health"/>&nbsp&nbspHealth</td>
+            </tr>
+            <tr>
+                <td><img src="../static/images/hungry.jpg" alt="hunger"/>&nbsp&nbspHunger</td>
+            </tr>
+            <tr>
+                <td><img src="../static/images/backpack.jpg" alt="special items"/>&nbsp&nbspSpecial Items</td>
+            </tr>
+        </table>
+    </aside>
+
+<footer>
+    <small>
+    &copy; 2016, All Rights Reserved ~ Authored by Karla Haigh, Caitlin Watkins, Scott C, and Calvin Calvo
+   </small>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <h1>Welcome to your journey!</h1>
+</header>
+<section>
+    <h1>What is your name?</h1>
+        <form action="" method="post" name="login">
+            {{ form.hidden_tag() }}
+            {{ form.openid(size=20) }}
+        <p><input type="submit" value="Continue"></p>
+        </form>
+</section>
+{% endblock %}
+    
